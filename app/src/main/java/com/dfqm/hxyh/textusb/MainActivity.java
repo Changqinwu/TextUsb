@@ -53,7 +53,11 @@ public class MainActivity extends AppCompatActivity {
 //        unregisterReceiver(mBroadcastReceiver);
     }
 
-
+/*
+*
+* 这是个注释，哈哈
+*
+* */
     //注册广播的方法
     private void registerUsbBroadcast() {
 //        IntentFilter iFilter = new IntentFilter();

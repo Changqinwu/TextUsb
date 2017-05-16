@@ -40,8 +40,6 @@
             </intent-filter>
         </receiver>
 
-        <activity android:name=".SecondActivity">
-        </activity>
     </application>
 
 </manifest>
