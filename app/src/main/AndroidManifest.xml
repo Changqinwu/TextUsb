@@ -6,7 +6,6 @@
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
     <uses-permission android:name="android.permission.HARDWARE_TEST"/>
 
-
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -23,7 +22,6 @@
         </activity>
 
         <receiver android:name=".MyBroadCastReceiver">
-
             <intent-filter>
                 <action android:name="android.hardware.usb.action.USB_DEVICE_ATTACHED"/>
             </intent-filter>
@@ -32,14 +30,18 @@
             </intent-filter>
             <intent-filter>
                 <action android:name="android.intent.action.MEDIA_MOUNTED"/>
+
                 <data android:scheme="file"/>
             </intent-filter>
             <intent-filter>
                 <action android:name="android.intent.action.MEDIA_EJECT"/>
+
                 <data android:scheme="file"/>
             </intent-filter>
-
         </receiver>
+
+        <activity android:name=".SecondActivity">
+        </activity>
     </application>
 
 </manifest>
